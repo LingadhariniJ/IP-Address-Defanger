@@ -1,0 +1,14 @@
+def defang_ipd(ip_address, defanging_char='[l]'):
+    defanged_ip = ip_address.replace('.', defanging_char)
+    return defanged_ip
+
+def main():
+    ip_address = input("Enter an IP address: ")
+    
+    defanged_ip = defang_ipd(ip_address)
+    
+    print("Original IP address:", ip_address)
+    print("Defanged IP address:", defanged_ip)
+
+if __name__ == "__main__":
+    main()
